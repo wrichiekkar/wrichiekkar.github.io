@@ -1,6 +1,6 @@
-Thanks for downloading this theme!
+Wrichiek's Website
 
 Theme Name: Regna
 Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+Author of theme: BootstrapMade.com
+Author of theme URL: https://bootstrapmade.com
