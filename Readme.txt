@@ -1,4 +1,4 @@
-Wrichiek's WEbsite
+Wrichiek's Website
 
 Theme Name: Regna
 Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
