@@ -34,11 +34,11 @@
 		body,h1 {font-family: "Raleway", Arial, sans-serif}
 		h1 {letter-spacing: 6px}
 		.w3-row-padding img {margin-bottom: 8px}
-		
+
 		#center{
 			margin:auto;
 		}
-		
+
 		#jumbo{
 			background-image: url(prevent.jpg);
 			background-position: 0% 25%;
@@ -50,15 +50,15 @@
 
 	</head>
 
-	<body class="bg-light">
-	
+	<body class="bg-dark" >
+
 		<nav id="topbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-		
+
 			<a class="navbar-brand text-danger" href="">Suicide Prevention</a>
 			<button class="navbar-toggler border-danger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
+
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="nav nav-tabs nav-light mr-auto" role="tablist">
 					<li class="nav-item">
@@ -72,7 +72,7 @@
 					</li>
 				</ul>
 			</div>
-			
+
 		</nav>
 
 		<!-- Header -->
@@ -81,14 +81,14 @@
 		  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'bn,en,fr,hi', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 		}
 		</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-				
+
 		<div class="container mt-5">
 			<div class="jumbotron bg-dark text-center">
 				<h1 class="w3-xlarge" style="color:#E2704E;">SUICIDE PREVENTION</h1>
 				<h1 class="text-danger">SBI HELPS TORONTO</h1>
 			</div>
 		</div>
-			
+
 		<div class="container">
 			<div class="jumbotron bg-dark text-center">
 				<h1 class="display-4 text-danger">You aren't alone</h1>
