@@ -50,7 +50,7 @@
 
 	</head>
 
-	<body class="bg-dark" >
+	<body class="bg-dark">
 
 		<nav id="topbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
 
@@ -95,7 +95,7 @@
 				<p class="lead" style="color:#E2704E;">Tell us about it</p>
 				<hr class="my-4" style="color:#E2704E;">
 				<p class="text-danger">Chat with one of our experts here.</p>
-				<a class="btn btn-outline-danger" href="chat.php">Chat!</a>
+				<a class="btn btn-outline-danger" href="chat.html">Chat!</a>
 			</div>
 		</div>
 
