@@ -7,8 +7,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+}
+iframe, object, embed {
+    max-width: 100%;
 }
 
 a {
