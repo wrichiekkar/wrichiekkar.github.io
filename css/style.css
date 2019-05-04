@@ -6,6 +6,10 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 a {
   color: #2dc997;
