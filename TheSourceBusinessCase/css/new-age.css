@@ -340,6 +340,14 @@ section.contact ul.list-social li.social-instagram a:hover {
   background-color: #b3194c;
 }
 
+section.contact ul.list-social li.social-twitter a {
+  background-color: #1da1f2;
+}
+
+section.contact ul.list-social li.social-twitter a:hover {
+  background-color: #0d95e8;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
