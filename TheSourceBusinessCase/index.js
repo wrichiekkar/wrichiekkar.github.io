@@ -1,4 +1,4 @@
-function toggleSignIn() {
+function login() {
     if (firebase.auth().currentUser) {
       // [START signout]
       firebase.auth().signOut();
@@ -33,13 +33,14 @@ function toggleSignIn() {
       // [END authwithemail]
     }
     document.getElementById('quickstart-sign-in').disabled = true;
-  }
+}
   /**
    * Handles the sign up button press.
    */
-  function handleSignUp() {
+function handleSignUp() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
+
     if (email.length < 4) {
       alert('Please enter an email address.');
       return;
@@ -68,7 +69,7 @@ function toggleSignIn() {
   /**
    * Sends an email verification to the user.
    */
-  function sendEmailVerification() {
+function sendEmailVerification() {
     // [START sendemailverification]
     firebase.auth().currentUser.sendEmailVerification().then(function() {
       // Email Verification sent!
@@ -78,7 +79,7 @@ function toggleSignIn() {
     });
     // [END sendemailverification]
   }
-  function sendPasswordReset() {
+function sendPasswordReset() {
     var email = document.getElementById('email').value;
     // [START sendpasswordemail]
     firebase.auth().sendPasswordResetEmail(email).then(function() {
@@ -106,7 +107,7 @@ function toggleSignIn() {
    *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
    *    out, and that is where we update the UI.
    */
-  function initApp() {
+function initApp() {
     // Listening for auth state changes.
     // [START authstatelistener]
     firebase.auth().onAuthStateChanged(function(user) {
