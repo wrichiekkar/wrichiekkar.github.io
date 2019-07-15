@@ -2,8 +2,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       window.location.href="http://wrichiekkar.me/TheSourceBusinessCase/MemberPage"
     } else {
+        // No user is signed in
     }
-  });
+});
 
 function login(){
 
@@ -15,7 +16,7 @@ function login(){
         var errorCode = error.code;
         var errorMessage = error.message;
         
-        window.alert("Incorrect login, try again")
+        window.alert("Error: " +errorMessage);
 
       });
 }
