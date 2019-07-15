@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      window.location.href="http://wrichiekkar.me/TheSourceBusinessCase/MemberPage"
+      return window.location.href="http://wrichiekkar.me/TheSourceBusinessCase/MemberPage";
     } else {
         // No user is signed in
     }
