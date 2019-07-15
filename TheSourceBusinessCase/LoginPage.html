@@ -71,26 +71,26 @@
   <section class="login" id="login">
     <div id="logincontainer">       
       <form>
-      <label for="username"><strong>Username:</strong></label>
-      <input type="text" id="email" name="email" placeholder="yourname@email.com" required>
-      <label for="password"><strong>Password:</strong></label>
-      <input type="password" id="password" name="password" placeholder="password" required>
-      <div id="lower">
-      <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
-      <input type="submit" value="Login" onclick="login()">
-      </div> 
+        <label for="username"><strong>Username:</strong></label>
+        <input type="text" id="email" name="email" placeholder="yourname@email.com" required>
+        <label for="password"><strong>Password:</strong></label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <div id="lower">
+          <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
+          <button type="submit" id="Login" onclick="Login()">Login</button>
+          <button type="submit" id="SignUp" onclick="SignUp()">Sign Up</button>
+        </div> 
       </form>
     </div>
   </section>
-
+  
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use --> 	
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-
   <script>
   // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -104,7 +104,10 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-  </script>
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>  
   <script src="index.js"></script>
 <!--
   <footer>
