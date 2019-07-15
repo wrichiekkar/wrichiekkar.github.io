@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Log In</title>
+  <link href="img/icon.png" rel="icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.css">
+
+  <!-- Custom styles -->
+  <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed" id="mainNav">
+    <div class="container">
+        <div id="logo" >
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src=img/logo4.png style="width:300px;height:150px">
+            </a>
+          </div>
+        
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/store-finder">SELECT MY STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/shopFlyer">SHOP FLYER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/b2b">SOURCE FOR BUSINESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/login">MY ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/cart">CART</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="login" id="login">
+    <div id="logincontainer">       
+      <form>
+      <label for="username"><strong>Username:</strong></label>
+      <input type="text" id="email" name="email" placeholder="yourname@email.com" required>
+      <label for="password"><strong>Password:</strong></label>
+      <input type="password" id="password" name="password" placeholder="password" required>
+      <div id="lower">
+      <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
+      <input type="submit" value="Login" onclick="login()">
+      </div> 
+      </form>
+    </div>
+  </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+  // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBORP45B7ZgQFSQ95rmYVwfDAgxG2zwl4w",
+      authDomain: "sourcerewards.firebaseapp.com",
+      databaseURL: "https://sourcerewards.firebaseio.com",
+      projectId: "sourcerewards",
+      storageBucket: "sourcerewards.appspot.com",
+      messagingSenderId: "107975190504",
+      appId: "1:107975190504:web:f163c94829fce49d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+<!--
+  <footer>
+    <div class="container">
+      <p> © Copyright 2019. All Rights Reserved</p>
+      <p>Designed by Wrichiek Kar</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+-->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>
