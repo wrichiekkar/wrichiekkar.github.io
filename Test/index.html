@@ -67,7 +67,7 @@
           <input type="password" id="login-password" required />
           <label for="login-password">Your password</label>
         </div>
-        <butFton class="btn yellow darken-2 z-depth-0">Login</button>
+        <button class="btn yellow darken-2 z-depth-0">Login</button>
       </form>
     </div>
   </div>
@@ -80,6 +80,46 @@
       <div class="account-extras"></div>
     </div>
   </div>
+
+  <!-- CREATE GUIDE MODAL -->
+  <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form">
+        <div class="input-field">
+          <input type="text" id="title" required>
+          <label for="title">Guide Title</label>
+        </div>
+        <div class="input-field">
+          <textarea id="content" class="materialize-textarea" required></textarea>
+          <label for="content">Guide Content</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Create</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- GUIDE LIST -->
+  <div class="container" style="margin-top: 40px;">
+    <ul class="collapsible z-depth-0 guides" style="border: none;">
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white">Lorem ipsum dolor sit amet.</div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+  </div>
   
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
@@ -87,13 +127,10 @@
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyDVbH80ZgOsnOvzOWLy4mCIYfZjM1V7pZ8",
-    authDomain: "thesource-rewards-program.firebaseapp.com",
-    databaseURL: "https://thesource-rewards-program.firebaseio.com",
-    projectId: "thesource-rewards-program",
-    storageBucket: "thesource-rewards-program.appspot.com",
-    messagingSenderId: "810608727828",
-    appId: "1:810608727828:web:61c17a207d2939be"
+      apiKey: "AIzaSyDlDUJhsP0_uh-YpaRfTOhWZsyY_hLukTw",
+      authDomain: "net-ninja-sandbox.firebaseapp.com",
+      databaseURL: "https://net-ninja-sandbox.firebaseio.com",
+      projectId: "net-ninja-sandbox"
     };
     firebase.initializeApp(config);
     
