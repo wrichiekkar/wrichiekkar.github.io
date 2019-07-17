@@ -41,7 +41,7 @@
           </div>
         
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
+
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -56,7 +56,7 @@
             <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/b2b">SOURCE FOR BUSINESS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/login">MY ACCOUNT</a>
+            <a class="nav-link js-scroll-trigger" href=#>MY ACCOUNT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/cart">CART</a>
@@ -68,7 +68,7 @@
 
   <section class="login" id="login">
     <div id="logincontainer">       
-      <form>
+      <form id=login-form>
         <label for="username"><strong>Email:</strong></label>
         <input type="text" id="email_field" name="email" placeholder="yourname@email.com">
 
@@ -77,15 +77,34 @@
         
         <div id="lower">
           <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
-          <button type="submit" id="Login" onclick="login()">Login</button>
-          <button type="submit" id="SignUp" onclick=" signup()">Sign Up</button>
+          <button type="submit" id="Login" >Login</button>
+          <button type="submit" id="SignUp">Sign Up</button>
         </div> 
       </form>
     </div>
   </section>
+  
+  <section class="login" id="login">
+      <div id="logincontainer">       
+        <form id="login-form">
+          <label for="login-email"><strong>Email:</strong></label>
+          <input type="email" id="login-email" placeholder="yourname@email.com">
+  
+          <label for="login-password"><strong>Password:</strong></label>
+          <input type="password" id="login-password" placeholder="Password">
+
+          <div id="lower">
+            <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
+            <button type="submit" id="Login" >Login</button>
+           <!-- <button type="submit" id="SignUp">Sign Up</button>-->
+          </div> 
+        </form>
+      </div>
+    </section>
+
   <section class="MemberPage" id="MemberPage">
     <h3>Welcome to TheSource Rewards Program!</h3>
-    <button type="submit" id="Logout" onclick="Logout()">Logout</button>
+    <button type="submit" id="Logout">Logout</button>
   </section>
   
 <!--
@@ -97,29 +116,33 @@
   </footer>
 -->
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDVbH80ZgOsnOvzOWLy4mCIYfZjM1V7pZ8",
-    authDomain: "thesource-rewards-program.firebaseapp.com",
-    databaseURL: "https://thesource-rewards-program.firebaseio.com",
-    projectId: "thesource-rewards-program",
-    storageBucket: "thesource-rewards-program.appspot.com",
-    messagingSenderId: "810608727828",
-    appId: "1:810608727828:web:61c17a207d2939be"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDVbH80ZgOsnOvzOWLy4mCIYfZjM1V7pZ8",
+      authDomain: "thesource-rewards-program.firebaseapp.com",
+      databaseURL: "https://thesource-rewards-program.firebaseio.com",
+      projectId: "thesource-rewards-program",
+      storageBucket: "thesource-rewards-program.appspot.com",
+      messagingSenderId: "810608727828",
+      appId: "1:810608727828:web:61c17a207d2939be"
+    };
+    firebase.initializeApp(config);
+    
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
 
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-
-  db.settings({timestanpsInSnapshots: true});
-</script>
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
 
 
 

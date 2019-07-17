@@ -344,7 +344,7 @@ section.contact ul.list-social li.social-twitter a:hover {
 /* LOGIN PAGE */
 
 section.login #logincontainer {
-  position: fixed;
+  position: absolute;
   width: 340px;
   height: 280px;
   top: 50%;
@@ -382,7 +382,7 @@ section.login p a:hover {
   color: #555;
 }
 
-section.login input[type=text],
+section.login input[type=email],
 section.login input[type=password] {
   color: #777;
   padding-left: 10px;
@@ -448,12 +448,13 @@ section.login button[type=submit]:active {
   background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
 }
 section.MemberPage{
+  display:none;
   text-align: center;
   color: white;
 }
 
 footer {
-  position: static;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
