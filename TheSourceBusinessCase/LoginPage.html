@@ -88,33 +88,6 @@
     <button type="submit" id="Logout" onclick="Logout()">Logout</button>
   </section>
   
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
-  <!--
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-  -->
-  <script>
-  // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyBORP45B7ZgQFSQ95rmYVwfDAgxG2zwl4w",
-      authDomain: "sourcerewards.firebaseapp.com",
-      databaseURL: "https://sourcerewards.firebaseio.com",
-      projectId: "sourcerewards",
-      storageBucket: "sourcerewards.appspot.com",
-      messagingSenderId: "107975190504",
-      appId: "1:107975190504:web:f163c94829fce49d"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-   
-  </script>  
-  <script src="login.js"></script>
 <!--
   <footer>
     <div class="container">
@@ -123,6 +96,33 @@
     </div>
   </footer>
 -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDVbH80ZgOsnOvzOWLy4mCIYfZjM1V7pZ8",
+    authDomain: "thesource-rewards-program.firebaseapp.com",
+    databaseURL: "https://thesource-rewards-program.firebaseio.com",
+    projectId: "thesource-rewards-program",
+    storageBucket: "thesource-rewards-program.appspot.com",
+    messagingSenderId: "810608727828",
+    appId: "1:810608727828:web:61c17a207d2939be"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  db.settings({timestanpsInSnapshots: true});
+</script>
+
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
