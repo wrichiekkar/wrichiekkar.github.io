@@ -342,115 +342,138 @@ section.contact ul.list-social li.social-twitter a:hover {
 }
 
 /* LOGIN PAGE */
+section.login{
+  text-align:center;
+}
+section.login button {
+  margin-top: 200px;
+  text-align: center;
+	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	background-color:#f3bb20;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #000000;
 
-section.login #logincontainer {
-  position: absolute;
-  width: 340px;
-  height: 280px;
-  top: 50%;
-  left: 50%;
-  margin-top: -140px;
-  margin-left: -170px;
-	background: #fff;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-	
 }
-section.login form {
-  margin: 0 auto;
-  margin-top: 20px;
+section.login button:hover {
+	background-color:#daa30b;
 }
-section.login label {
-  color: black;
-  display: inline-block;
-  margin-left: 8px;
-  padding-top: 10px;
-  font-size: 14px;
-}
-section.login p a {
-  font-size: 11px;
-  color: #aaa;
-  float: right;
-  margin-top: -13px;
-  margin-right: 20px;
- -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  transition: all .4s ease;
-}
-section.login p a:hover {
-  color: #555;
+section.login button:active {
+	position:relative;
+	top:1px;
 }
 
-section.login input[type=email],
-section.login input[type=password] {
-  color: #777;
-  padding-left: 10px;
-  margin: 10px;
-  margin-top: 12px;
-  margin-left: 18px;
-  width: 290px;
-  height: 35px;
-  order: 1px solid #c7d0d2;
-  border-radius: 2px;
-  box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  transition: all .4s ease;
-  }
+section.MemberPage h3 {
+  margin-top:150px;
+  font-weight:bold;
+  font-size: 60px;
+}
+Section.MemberPage th {
+  font-weight:bold;
+  font-size: 30px;
+}
+Section.MemberPage table{
+  border-width: 8px;
+  border-style: ridge;
+  border-color: rgba(28,110,164,0.43);
+}
 
-section.login #lower {
-  background: #ecf2f5;
-  width: 100%;
-  height: 69px;
-  margin-top: 20px;
-  box-shadow: inset 0 1px 1px #fff;
-  border-top: 1px solid #ccc;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+Section.MemberPage table { 
+  background-color:#FFFFE0;
+  border-collapse:collapse;
+  color:#000;
+  font-size:18px; 
 }
-section.login input[type=checkbox] {
-  margin-left: 10px;
-  margin-top: 30px;
+Section.MemberPage th { 
+  background-color:#BDB76B;
+  color:white;
+  width:50%; 
 }
-section.login .check {
-  margin-left: 3px;
-	font-size: 11px;
-  color: black;
-  text-shadow: 0 1px 0 #fff;
+Section.MemberPage td, th { 
+  padding:5px;
+  border:0; 
 }
-section.login button[type=submit] {
-  margin-left: 5px;
-  margin-right: 0px;
-  margin-top: 20px;
-  width: 80px;
-  height: 30px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #acd6ef; /*IE fallback*/
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
-  background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-  background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-  border-radius: 3px;
-  border: 1px solid #66add6;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-  cursor: pointer;
+
+Section.MemberPage td { 
+  border-bottom:1px solid #BDB76B; 
 }
-section.login button[type=submit]:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-  background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-  background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-}
-section.login button[type=submit]:active {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-  background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-  background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+
+Section.MemberPage td{
+  font-size: 20px;
 }
 section.MemberPage{
-  display:none;
   text-align: center;
   color: white;
+}
+
+section.MemberPage tr:hover {
+  background-color: #ddd;
+}
+
+section.MemberPage button {
+  text-align: center;
+	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	background-color:#f3bb20;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #000000;
+
+}
+section.MemberPage button:hover {
+	background-color:#daa30b;
+}
+section.MemberPage button:active {
+	position:relative;
+	top:1px;
+}
+section.Promo{
+  color: black;
+}
+section.Promo h2{
+  font-size: 25px;
+  font-weight: bold;
+}
+Section.Promo h4{
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight:bold;
+}
+section.Promo p{
+  font-size: 13px;
+}
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.coupon {
+  border: 5px dotted #bbb;
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #e6e6e6;
+}
+
+
+.expire {
+  color: black;
 }
 
 .modal {
@@ -460,12 +483,35 @@ section.MemberPage{
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 70%;
+  max-height: 219px;
   width: 55%;
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
   will-change: top, opacity;
+}
+.modal button {
+	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	box-shadow:inset 0px 34px 0px -15px #f3bb20;
+	background-color:#f3bb20;
+	border:1px solid #33230d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #000000;
+}
+.modal button:hover {
+	background-color:#1486d2;
+}
+.modal button:active {
+	position:relative;
+	top:1px;
 }
 
 .modal:focus {
@@ -479,6 +525,7 @@ section.MemberPage{
 }
 
 .modal h1, .modal h2, .modal h3, .modal h4 {
+  font: Arial;
   margin-top: 0;
 }
 
@@ -537,7 +584,8 @@ section.MemberPage{
 }
 
 .modal.bottom-sheet {
-  top: auto;
+  
+  top: 100%;
   bottom: -100%;
   margin: 0;
   width: 100%;

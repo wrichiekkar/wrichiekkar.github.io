@@ -2,8 +2,12 @@
 auth.onAuthStateChanged(user => {
   if (user) {
     console.log('user logged in: ', user);
+    document.getElementById("non-authenticated").style.display = "none";
+    document.getElementById("authenticated").style.display = "initial";
   } else {
     console.log('user logged out');
+    document.getElementById("authenticated").style.display = "none";
+    document.getElementById("non-authenticated").style.display = "initial";
   }
 })
 
@@ -15,13 +19,13 @@ signupForm.addEventListener('submit', (e) => {
   // get user info
   const email = signupForm['signup-email'].value;
   const password = signupForm['signup-password'].value;
-
   // sign up the user
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
     // close the signup modal & reset form
     const modal = document.querySelector('#modal-signup');
     M.Modal.getInstance(modal).close();
     signupForm.reset();
+    window.alert("You have now signed up and are now logged in");
   });
 });
 
@@ -30,6 +34,7 @@ const logout = document.querySelector('#logout');
 logout.addEventListener('click', (e) => {
   e.preventDefault();
   auth.signOut();
+  window.alert("You are now logged out");
 });
 
 // login
@@ -43,10 +48,12 @@ loginForm.addEventListener('submit', (e) => {
 
   // log the user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
+    window.alert("You are now logged in");
     // close the signup modal & reset form
     const modal = document.querySelector('#modal-login');
     M.Modal.getInstance(modal).close();
     loginForm.reset();
+    
   });
 
 });

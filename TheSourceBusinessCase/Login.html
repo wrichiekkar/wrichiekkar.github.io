@@ -65,11 +65,102 @@
       </div>
     </div>
   </nav>
-  <form>
-  <button class="btn btn-info btn-lg modal-trigger" data-target="modal-login">Login</button>
-</form>
-  <button class="btn btn-info btn-lg modal-trigger" data-target="modal-signup">Sign Up</button>
 
+  <section class="login" id="non-authenticated">
+    <div class="login">
+      <button class="modal-trigger" id="non-authenticated" data-target="modal-login">Login</button>
+      <button class="modal-trigger" id="non-authenticated" data-target="modal-signup">Sign Up</button>
+    </div>
+
+  </section>
+  <section class="MemberPage" id="authenticated">
+    <div class="MemberPage">
+      <h3>Welcome to TheSource Rewards Program!</h3>
+      <h2>Here you can:</h2>
+      <p>View Total Points and History <Br> View Past Transactions</p>
+  </div>
+  
+  <section class="MemberPage masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 style="text-align:center" class="mb-5"><strong>Total Points and History:</strong></h1>
+            </div>
+          </div>
+          <div class="MemberPage col-lg-5 my-auto">
+              <table style="width:100%">
+                  <tr>
+                    <th>Purchase Date</th>
+                    <th>Serial Number</th> 
+                    <th>Points Earned</th>
+                  </tr>
+                  <tr>
+                    <td>July 29th, 2019</td>
+                    <td>AAJF230DFK</td> 
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>July 28th, 2019</td>
+                    <td>DKSLWKM92</td> 
+                    <td>94</td>
+                  </tr>
+                  <tr>
+                    <td>July 27th, 2019</td>
+                    <td>MDVK32KKS09</td> 
+                    <td>54</td>
+                  </tr>
+                  <tr>
+                    <td>July 26th, 2019</td>
+                    <td>JDKWNCKW93</td> 
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>July 25th, 2019</td>
+                    <td>AMDNEJSD32</td> 
+                    <td>101</td>
+                  </tr>
+                  <tr>
+                    <td>July 24th, 2019</td>
+                    <td>KDMCNDKW12</td> 
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>July 23th, 2019</td>
+                    <td>PKDMVNDL12</td> 
+                    <td>51</td>
+                  </tr>
+                  <tr>
+                    <td>TOTAL</td>
+                    <td>POINTS:</Td>
+                    <td>405</td>
+                  </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="Promo">
+        <div class="coupon">
+            <div class="container">
+              <h4>Limited Time Only!</h4>
+            </div>
+            <img src="img/promoimg.png" alt="Google Home Mini" style="width:250px; height:250px;">
+            <div class="container" style="background-color:white">
+              <h2><strong>10% OFF YOUR PURCHASE</strong></h2> 
+              <p>Exclusive members only promotion! Recieve 10% off your purchase of a Google Home Mini! White quantites last. Some promotional offers may not be combined with other offers in the same order. Generally, only one coupon code may be used per order. Each coupon is valid for a limited time only and expires on the date specified in the offer</p>
+            </div>
+            <div class="container">
+              <p>Use Promo Code: <span class="promo">BOH232</span> at checkout or present this coupon in store!</p>
+              <p class="expire">Expires: Aug 16, 2019</p>
+            </div>
+          </div>
+    </section>
+    <div class="MemberPage">
+        <button style="margin-bottom: 10%"class="modal-trigger" id="logout">Log out</button>
+    </div>
+  </section>
   <!-- SIGN UP MODAL -->
   <div id="modal-signup" class="modal">
       <div class="modal-content">
@@ -83,7 +174,7 @@
             <input type="password" id="signup-password" required />
             <label for="signup-password">Choose password</label>
           </div>
-          <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          <button>Sign up</button>
         </form>
       </div>
     </div>
@@ -101,42 +192,10 @@
             <input type="password" id="login-password" required />
             <label for="login-password">Your password</label>
           </div>
-          <button class="btn yellow darken-2 z-depth-0">Login</button>
+          <button>Login</button>
         </form>
       </div>
     </div>
-<!--
-  <section class="signup" id="signup">
-      <div id="logincontainer">       
-        <form id="login-form">
-          <label for="signup-email"><strong>Email:</strong></label>
-          <input type="email" id="signup-email" placeholder="yourname@email.com">
-  
-          <label for="signup-password"><strong>Password:</strong></label>
-          <input type="password" id="signup-password" placeholder="Password">
-
-          <div id="lower">
-            <input type="checkbox" id="checkbox"><label for="checkbox"><strong>Keep me logged in</strong></label>
-            <button type="submit" id="Login" >Login</button>
-            <button type="submit" id="SignUp">Sign Up</button>
-          </div> 
-        </form>
-      </div>
-    </section>
--->
-  <section class="MemberPage" id="MemberPage">
-    <h3>Welcome to TheSource Rewards Program!</h3>
-    <button type="submit" id="Logout">Logout</button>
-  </section>
-  
-<!--
-  <footer>
-    <div class="container">
-      <p> © Copyright 2019. All Rights Reserved</p>
-      <p>Designed by Wrichiek Kar</p>
-    </div>
-  </footer>
--->
 
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
@@ -163,8 +222,8 @@
   </script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="auth.js"></script>
-  <script src="index.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
   
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
