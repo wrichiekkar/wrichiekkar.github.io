@@ -454,6 +454,11 @@ Section.Promo h4{
   font-size: 50px;
   font-weight:bold;
 }
+Section.Promo h3{
+  color: white;
+  font-weight:bold;
+  padding-bottom: 30px;
+}
 section.Promo p{
   font-size: 13px;
 }
@@ -473,6 +478,23 @@ section.Promo p{
 
 .expire {
   color: black;
+}
+
+Section.History h3{
+  color: white;
+  font-weight:bold;
+  padding-bottom: 30px;
+}
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 .modal {
