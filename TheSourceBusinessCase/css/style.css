@@ -29,7 +29,7 @@ hr.light {
   border-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -50,6 +50,7 @@ section h2 {
 }
 
 }
+
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -58,7 +59,6 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-
 }
 
 #mainNav .navbar-brand {
@@ -75,32 +75,30 @@ section h2 {
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
-  color:  white;
+  color: white;
 }
 
-#mainNav .navbar-nav > li > a {
+#mainNav .navbar-nav>li>a {
   font-size: 17px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-#mainNav .navbar-nav > li > a.active {
+#mainNav .navbar-nav>li>a.active {
   color: white !important;
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li > a.active:hover {
+#mainNav .navbar-nav>li>a.active:hover {
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li > a,
-#mainNav .navbar-nav > li > a:focus {
-  color:  white;
+#mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
+  color: white;
 }
 
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
+#mainNav .navbar-nav>li>a:hover, #mainNav .navbar-nav>li>a:focus:hover {
   color: white;
 }
 
@@ -109,14 +107,10 @@ section h2 {
     border-color: transparent;
     background-color: transparent;
   }
- 
- 
-  #mainNav .navbar-nav > li > a,
-  #mainNav .navbar-nav > li > a:focus {
+  #mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
     color: rgba(255, 255, 255, 0.7);
   }
-  #mainNav .navbar-nav > li > a:hover,
-  #mainNav .navbar-nav > li > a:focus:hover {
+  #mainNav .navbar-nav>li>a:hover, #mainNav .navbar-nav>li>a:focus:hover {
     color: white;
   }
   #mainNav.navbar-shrink {
@@ -129,12 +123,10 @@ section h2 {
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
     color: white;
   }
-  #mainNav.navbar-shrink .navbar-nav > li > a,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+  #mainNav.navbar-shrink .navbar-nav>li>a, #mainNav.navbar-shrink .navbar-nav>li>a:focus {
     color: white;
   }
-  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+  #mainNav.navbar-shrink .navbar-nav>li>a:hover, #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover {
     color: white;
   }
 }
@@ -145,7 +137,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: #ED2724}
+  background: #ED2724
+}
 
 header.masthead .header-content {
   max-width: 500px;
@@ -186,15 +179,16 @@ header.masthead .device-container .screen img {
   }
 }
 
-
 section.download {
   position: relative;
   padding: 150px 0;
   background: #ED2724;
 }
+
 section.download p {
   color: #FFFFFF;
 }
+
 section.download h2 {
   color: #FFFFFF;
   font-size: 50px;
@@ -231,6 +225,7 @@ section.features {
   background: #ED2724;
   color: #FFFFFF;
 }
+
 section.features .section-heading {
   margin-bottom: 100px;
 }
@@ -243,8 +238,7 @@ section.features .section-heading p {
   margin-bottom: 0;
 }
 
-section.features .device-container,
-section.features .feature-item {
+section.features .device-container, section.features .feature-item {
   max-width: 325px;
   margin: 0 auto;
 }
@@ -273,14 +267,15 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background:white;
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-section.contact{
+section.contact {
   background: #ED2724
 }
+
 section.contact {
   text-align: center;
 }
@@ -291,7 +286,7 @@ section.contact h2 {
   margin-bottom: 25px;
 }
 
-section.contact  i {
+section.contact i {
   color: #FFFFFF;
 }
 
@@ -342,74 +337,82 @@ section.contact ul.list-social li.social-twitter a:hover {
 }
 
 /* LOGIN PAGE */
-section.login{
-  text-align:center;
+
+section.login {
+  text-align: center;
 }
+
 section.login button {
   margin-top: 200px;
   text-align: center;
-	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	background-color:#f3bb20;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
-	font-weight:bold;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #000000;
+  -moz-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  -webkit-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  background-color: #f3bb20;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #000000;
+}
 
-}
 section.login button:hover {
-	background-color:#daa30b;
+  background-color: #daa30b;
 }
+
 section.login button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 section.MemberPage h3 {
-  margin-top:150px;
-  font-weight:bold;
+  margin-top: 150px;
+  font-weight: bold;
   font-size: 60px;
 }
+
 Section.MemberPage th {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 30px;
 }
-Section.MemberPage table{
+
+Section.MemberPage table {
   border-width: 8px;
   border-style: ridge;
-  border-color: rgba(28,110,164,0.43);
+  border-color: rgba(28, 110, 164, 0.43);
 }
 
-Section.MemberPage table { 
-  background-color:#FFFFE0;
-  border-collapse:collapse;
-  color:#000;
-  font-size:18px; 
-}
-Section.MemberPage th { 
-  background-color:#BDB76B;
-  color:white;
-  width:50%; 
-}
-Section.MemberPage td, th { 
-  padding:5px;
-  border:0; 
+Section.MemberPage table {
+  background-color: #FFFFE0;
+  border-collapse: collapse;
+  color: #000;
+  font-size: 18px;
 }
 
-Section.MemberPage td { 
-  border-bottom:1px solid #BDB76B; 
+Section.MemberPage th {
+  background-color: #BDB76B;
+  color: white;
+  width: 50%;
 }
 
-Section.MemberPage td{
+Section.MemberPage td, th {
+  padding: 5px;
+  border: 0;
+}
+
+Section.MemberPage td {
+  border-bottom: 1px solid #BDB76B;
+}
+
+Section.MemberPage td {
   font-size: 20px;
 }
-section.MemberPage{
+
+section.MemberPage {
   text-align: center;
   color: white;
 }
@@ -420,48 +423,55 @@ section.MemberPage tr:hover {
 
 section.MemberPage button {
   text-align: center;
-	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	background-color:#f3bb20;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
-	font-weight:bold;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #000000;
+  -moz-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  -webkit-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  background-color: #f3bb20;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #000000;
+}
 
-}
 section.MemberPage button:hover {
-	background-color:#daa30b;
+  background-color: #daa30b;
 }
+
 section.MemberPage button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-section.Promo{
+
+section.Promo {
   color: black;
 }
-section.Promo h2{
+
+section.Promo h2 {
   font-size: 25px;
   font-weight: bold;
 }
-Section.Promo h4{
+
+Section.Promo h4 {
   margin-top: 20px;
   font-size: 50px;
-  font-weight:bold;
+  font-weight: bold;
 }
-Section.Promo h3{
+
+Section.Promo h3 {
   color: white;
-  font-weight:bold;
+  font-weight: bold;
   padding-bottom: 30px;
 }
-section.Promo p{
+
+section.Promo p {
   font-size: 13px;
 }
+
 .promo {
   background: #ccc;
   padding: 3px;
@@ -480,11 +490,12 @@ section.Promo p{
   color: black;
 }
 
-Section.History h3{
+Section.History h3 {
   color: white;
-  font-weight:bold;
+  font-weight: bold;
   padding-bottom: 30px;
 }
+
 .row {
   flex-direction: row;
   flex-wrap: wrap;
@@ -511,28 +522,31 @@ Section.History h3{
   border-radius: 2px;
   will-change: top, opacity;
 }
+
 .modal button {
-	-moz-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	box-shadow:inset 0px 34px 0px -15px #f3bb20;
-	background-color:#f3bb20;
-	border:1px solid #33230d;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #000000;
+  -moz-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  -webkit-box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  box-shadow: inset 0px 34px 0px -15px #f3bb20;
+  background-color: #f3bb20;
+  border: 1px solid #33230d;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #000000;
 }
+
 .modal button:hover {
-	background-color:#1486d2;
+  background-color: #1486d2;
 }
+
 .modal button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 .modal:focus {
@@ -605,7 +619,6 @@ Section.History h3{
 }
 
 .modal.bottom-sheet {
-  
   top: 100%;
   bottom: -100%;
   margin: 0;
@@ -631,11 +644,13 @@ footer p {
   margin: 0;
   color: black
 }
+
 footer a {
   font-size: 12px;
   margin: 0;
   color: black
 }
+
 footer ul {
   margin-bottom: 0;
 }
@@ -659,7 +674,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter>[class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
