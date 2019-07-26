@@ -381,12 +381,10 @@ Section.MemberPage th {
 }
 
 Section.MemberPage table {
+  position: static;
   border-width: 8px;
   border-style: ridge;
   border-color: rgba(28, 110, 164, 0.43);
-}
-
-Section.MemberPage table {
   background-color: #FFFFE0;
   border-collapse: collapse;
   color: #000;
@@ -508,6 +506,13 @@ Section.History h3 {
   flex: 1;
 }
 
+div.chatbot iframe{
+  display:none;
+  position:fixed;
+  bottom: 0px;
+  right: 30px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -541,7 +546,7 @@ Section.History h3 {
 }
 
 .modal button:hover {
-  background-color: #1486d2;
+  background-color: #daa30b;
 }
 
 .modal button:active {

@@ -57,11 +57,10 @@
             <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/b2b">SOURCE FOR BUSINESS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="http://wrichiekkar.me/TheSourceBusinessCase/Login.html">MY
-              ACCOUNT</a>
+            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/cart">CART</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://www.thesource.ca/en-ca/cart">CART</a>
+              <a class="nav-link js-scroll-trigger" href="http://wrichiekkar.me/TheSourceBusinessCase/Login.html">MY ACCOUNT</a>
           </li>
         </ul>
       </div>
@@ -70,14 +69,14 @@
 
   <section class="login" id="non-authenticated">
     <div class="login">
-      <button class="modal-trigger" id="non-authenticated" data-target="modal-login">Login</button>
-      <button class="modal-trigger" id="non-authenticated" data-target="modal-signup">Sign Up</button>
+      <button class="modal-trigger" data-target="modal-login">Login</button>
+      <button class="modal-trigger" data-target="modal-signup">Sign Up</button>
     </div>
   </section>
 
   <section class="MemberPage" id="authenticated">
     <div class="MemberPage">
-      <h3>Welcome to TheSource Rewards Program!</h3>
+      <h3>Welcome to TheSource Rewards Program!</h3>  
       <h2>Here you can:</h2>
       <p>View Total Points and History <Br> View Past Transactions <br> View Rewards Redemption History<br> Check out
         exclusive promotions!</p>
@@ -181,10 +180,25 @@
       </div>
     </section>
 
-    <div class="MemberPage">
+    <div class="chatbot">
+      <h3> Have any questions? Click here to talk to an agent!</h3>
+      <button onclick="StartChatbot()">Begin a chat</button>
+    </div>
+    
+    <div class="chatbot" id="startbot">
+        <iframe
+        allowfullscreen=""
+        allow="microphone;"
+        width="300"
+        height="350"
+        src="https://console.dialogflow.com/api-client/demo/embedded/7191ae92-dbb6-4ceb-9e8c-4e3e9bd94ed4">
+        </iframe>
+      </div>
+    <div>
       <button style="margin-bottom: 10%" class="modal-trigger" id="logout">Log out</button>
     </div>
   </section>
+  
 
   <!-- SIGN UP MODAL -->
   <div id="modal-signup" class="modal">
