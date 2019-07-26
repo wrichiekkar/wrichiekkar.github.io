@@ -10,11 +10,11 @@
 ## Solution
 Created a loyalty program focused on incentivizing the 2nd purchase. Our solution includes an analysis, recommendations, implementations(Loyalty card, website, andriod app), financials, and risk management.
 
-##Website
+## Website
 The website was designed used HTML, CSS, Javascript, and Bootstrap. The initial page, index.html was created to act as a sales page to pitch the idea to TheSouce customers.
 
 In the navigation bar, the my account section was created to show an authenticated vs non-authentiacated view. On this page you can sign up, or login to TheSource rewards program. The login was created using a real-time database (google firestore). Once you enter an email and password, it sends a request to the database verifying the credentials, any errors are logged to the console. Upon successful authentication, the page becomes a Member page (authenticated view). On this page you can see a demo as to what a potential authenticated user can see.
 
-##App
+## App
 The app was created using Java. Similar to the website, the login sends a request to a database, verifying the credentials. 
 
