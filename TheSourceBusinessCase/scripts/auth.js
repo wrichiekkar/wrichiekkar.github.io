@@ -27,6 +27,13 @@ signupForm.addEventListener('submit', (e) => {
     signupForm.reset();
     window.alert("You have now signed up and are now logged in");
   });
+  // Error Message
+  firebase.auth().createUserWithEmailAndPassword(email,password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert(errorMessage)
+  });
 });
 
 // logout
@@ -45,6 +52,14 @@ loginForm.addEventListener('submit', (e) => {
   // get user info
   const email = loginForm['login-email'].value;
   const password = loginForm['login-password'].value;
+  // Error Message
+  firebase.auth().signInWithEmailAndPassword(email,password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert(errorMessage)
+    // ...
+  });
 
   // log the user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
@@ -55,5 +70,4 @@ loginForm.addEventListener('submit', (e) => {
     loginForm.reset();
     
   });
-
 });
