@@ -1,5 +1,5 @@
 // setup materialize components
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
   var modals = document.querySelectorAll('.modal');
   M.Modal.init(modals);
@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -56,4 +56,3 @@ function StartChatbot() {
   //document.getElementById("startbot").style.display = "flex";
   var myWindow = window.open("http://wrichiekkar.me/TheSourceBusinessCase/VirtualAssistant.html", "", "width=350,height=400");
 }
-
