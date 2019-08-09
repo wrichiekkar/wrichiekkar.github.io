@@ -56,3 +56,4 @@ function StartChatbot() {
   //document.getElementById("startbot").style.display = "flex";
   var myWindow = window.open("http://wrichiekkar.me/TheSourceBusinessCase/VirtualAssistant.html", "", "width=350,height=400");
 }
+
