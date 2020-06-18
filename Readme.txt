@@ -1,1 +1,0 @@
-Wrichiek's Website
