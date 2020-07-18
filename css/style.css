@@ -4514,7 +4514,7 @@ h5 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 110px;
+  padding-top:50px;
   z-index: 2;
 }
 .mouse-icon {
