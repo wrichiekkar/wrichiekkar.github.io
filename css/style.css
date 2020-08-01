@@ -4928,22 +4928,7 @@ h5 {
 .project:hover .text {
   opacity: 1;
 }
-.form-control {
-  height: 52px !important;
-  background: #fff !important;
-  color: #000 !important;
-  font-size: 18px;
-  border-radius: 5px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-.form-control:active,
-.form-control:focus {
-  border-color: #000;
-}
-textarea.form-control {
-  height: inherit !important;
-}
+
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
