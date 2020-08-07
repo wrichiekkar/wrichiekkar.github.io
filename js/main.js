@@ -1,9 +1,34 @@
-AOS.init({
-	duration: 800,
-	easing: 'slide'
-});
+//AOS.init({
+//	duration: 800,
+//	easing: 'slide'
+//});
 
 (function ($) {
+
+	//back to top function
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+		  $('.back-to-top').fadeIn('slow');
+		  $('#header').addClass('header-fixed');
+		} else {
+		  $('.back-to-top').fadeOut('slow');
+		  $('#header').removeClass('header-fixed');
+		}
+	  });
+	  $('.back-to-top').click(function () {
+		$('html, body').animate({
+		  scrollTop: 0
+		}, 400, 'easeInOutExpo');
+		return false;
+	  });
+
+	  //logo scroll up
+	  $('.navbar-brand').click(function () {
+		$('html, body').animate({
+		  scrollTop: 0
+		}, 400, 'easeInOutExpo');
+		return false;
+	  });
 
 	"use strict";
 
