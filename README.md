@@ -1,4 +1,4 @@
 # wrichiekkar.github.io
-Personal Website
+Personal Website 
 
 https://wrichiekkar.com/
